@@ -1,0 +1,30 @@
+GET http://localhost:8000/hello HTTP/1.1
+
+###
+
+POST http://localhost:8000/hello HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Aravinda",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+
+###
+
+get http://localhost:8000/hello/AravindaG HTTP/1.1
+content-type: application/json
+
+### Add Comments
+
+POST http://localhost:8000/api/articles/learn-react/add-comment HTTP/1.1
+content-type: application/json
+
+{
+    "userName": "AravindaG",
+    "comment": "Very good article"
+}
+
+### Get Article by name
+
+GET http://localhost:8000/api/articles/learn-node HTTP/1.1
